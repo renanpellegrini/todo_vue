@@ -4,8 +4,6 @@
   import Formulario from './components/Formulario.vue';
   import ListaDeTarefas from './components/ListaDeTarefas.vue';
 
-
-
   const estado = reactive ({
     filtro: 'todas',
     tarefaTemp: '',
@@ -59,9 +57,3 @@
     <ListaDeTarefas :tarefas="getTarefasFiltradas()"/>
   </div>
 </template>
-
-<style scoped>
-  .done {
-    text-decoration: line-through;
-  }
-</style>
